@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #081225;
+    font-family: Arial, sans-serif;
+    color: white;
+
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+.header-card{
+    background-color: #1a263d;
+
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 20px auto;
+
+    padding: 50px 20px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.header-card h1{
+    color: #27b3ff;
+
+    font-size: 3rem;
+
+    margin-bottom: 15px;
+}
+
+.header-card p{
+    font-size: 1.2rem;
+
+    color: #d6d6d6;
+}
+
+/* MAIN GRID */
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 20px;
+}
+
+/* CARDS */
+
+.card{
+    background-color: #1a263d;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card h2{
+    color: #27b3ff;
+
+    margin-bottom: 20px;
+
+    font-size: 1.8rem;
+}
+
+.card h3{
+    color: #27b3ff;
+
+    margin-bottom: 10px;
+
+    font-size: 1.2rem;
+}
+
+.card p{
+    line-height: 1.8;
+
+    color: #d6d6d6;
+
+    font-size: 1rem;
+}
+
+/* SKILLS */
+
+.skills{
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.skills span{
+    background-color: #243854;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.skills span:hover{
+    background-color: #27b3ff;
+
+    color: black;
+}
+
+/* CONTACT */
+
+.contact-card{
+    background-color: #1a263d;
+
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 20px auto;
+
+    padding: 40px 20px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.contact-card h2{
+    color: #27b3ff;
+
+    margin-bottom: 20px;
+
+    font-size: 2rem;
+}
+
+.contact-card p{
+    margin: 15px 0;
+
+    color: #d6d6d6;
+
+    font-size: 1rem;
+}
+
+/* LINKS */
+
+a{
+    color: #27b3ff;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+a:hover{
+    color: white;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 768px){
+
+    .header-card{
+        padding: 40px 15px;
+    }
+
+    .header-card h1{
+        font-size: 2rem;
+    }
+
+    .header-card p{
+        font-size: 1rem;
+    }
+
+    .card{
+        padding: 25px;
+    }
+
+    .card h2{
+        font-size: 1.5rem;
+    }
+
+    .contact-card h2{
+        font-size: 1.5rem;
+    }
+}
